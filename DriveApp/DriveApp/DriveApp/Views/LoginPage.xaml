@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DriveApp.LoginPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="MasterLayout">
+
+
+
+
+
+            <StackLayout x:Name="OuterStack" Orientation="Vertical" WidthRequest="200">
+                <StackLayout.Padding>
+                    <OnIdiom x:TypeArguments="Thickness">
+                        <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                        <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+                    </OnIdiom>
+                </StackLayout.Padding>
+
+                <StackLayout x:Name="LogoStack" Padding="15">
+                    <Image x:Name="SnelleWiel"  Source="snwi.png"/>
+                </StackLayout>
+
+
+                <StackLayout x:Name="InnerStack1" Orientation="Horizontal">
+                    <StackLayout.HeightRequest>
+                        <OnIdiom x:TypeArguments="x:Double">
+                            <OnIdiom.Phone>40</OnIdiom.Phone>
+                            <OnIdiom.Tablet>80</OnIdiom.Tablet>
+                        </OnIdiom>
+                    </StackLayout.HeightRequest>
+                    
+                    
+                    <Image x:Name="User" Source="user.png"/>
+                    <Entry x:Name="Entry_Username" Placeholder="Username" HorizontalOptions="FillAndExpand"/>
+                        
+                </StackLayout>
+                <StackLayout x:Name="InnerStack2" Orientation="Horizontal"> 
+                    <StackLayout.HeightRequest>
+                        <OnIdiom x:TypeArguments="x:Double">
+                            <OnIdiom.Phone>40</OnIdiom.Phone>
+                            <OnIdiom.Tablet>80</OnIdiom.Tablet>
+                        </OnIdiom>
+                    </StackLayout.HeightRequest>
+                    <Image x:Name="PassIcon" Source="Lock.png"/>
+                    <Entry x:Name="Entry_Password" Placeholder="Password" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                
+                <StackLayout x:Name="InnerStack3" Orientation="Horizontal">
+                    <Button x:Name="btSignin" Text="Login" Clicked="SignInProcedure" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <Label x:Name="kutlabel" />
+
+                <ActivityIndicator x:Name="ActivitySpinner"  Color="Red" IsRunning="True"/>
+
+            </StackLayout>
+
+
+
+
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

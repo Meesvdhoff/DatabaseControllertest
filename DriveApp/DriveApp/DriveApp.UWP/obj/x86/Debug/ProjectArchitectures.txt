@@ -1,0 +1,2 @@
+C:\Users\Mees\source\repos\DriveApp\DriveApp\DriveApp.UWP\DriveApp.UWP.csproj;x86
+C:\Users\Mees\source\repos\DriveApp\DriveApp\DriveApp\DriveApp.csproj;neutral
